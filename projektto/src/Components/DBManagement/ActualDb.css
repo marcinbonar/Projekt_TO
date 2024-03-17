@@ -1,0 +1,30 @@
+.DBName {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.DataBaseNameHeader {
+    padding: 8px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+    font-weight: bolder;
+    background-color: #eeecec;
+    max-width: 16.7vw;
+
+}
+
+.DBManageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DBManageButton {
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0)
+}
