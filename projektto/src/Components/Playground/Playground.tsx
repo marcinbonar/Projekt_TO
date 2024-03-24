@@ -1,59 +1,23 @@
-import React, { useCallback, useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { Fragment } from 'react';
 import { faTable } from '@fortawesome/free-solid-svg-icons';
 import '../Tools.css';
 
 import ReactFlow, {
-  addEdge,
   MiniMap,
   Controls,
   Background,
-  useNodesState,
-  useEdgesState,
-  FitViewOptions,
-  applyNodeChanges,
-  applyEdgeChanges,
-  Node,
-  Edge,
-  OnNodesChange,
-  OnEdgesChange,
-  OnConnect,
-  DefaultEdgeOptions,
-  NodeTypes,
-  BackgroundVariant
+  BackgroundVariant,
 } from 'reactflow';
 
 import 'reactflow/dist/style.css';
-import PrintButton from '../PrintButton';
-import { createNewNode } from './createNewNode'; // Importing createNewNode function
+
+import PrintButton from '../PrintButton/PrintButton';
+import useGraph from './useGraph';
+import { nodeTypesConfig } from './constants';
 
 
-
-function Playground(): JSX.Element {
-  const [nodes, setNodes] = useState<Node[]>([]);
-  
-  const [edges, setEdges] = useState<Edge[]>([]);
-
-  const onNodesChange: OnNodesChange = useCallback(
-    (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
-    [setNodes],
-
-  );
-
-  const onEdgesChange: OnEdgesChange = useCallback(
-    (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),
-    [setEdges],
-  );
-  const onConnect: OnConnect = useCallback(
-    (connection) => setEdges((eds) => addEdge(connection, eds)),
-    [setEdges],
-  );
-
-  const handleCreateNewNode = () => {
-    const updatedNodes = createNewNode(nodes);
-    setNodes(updatedNodes);
-  }
-
+const Playground = () => {
+  const { nodes, edges, onNodesChange, onConnect, handleCreateNewNode, onEdgesChange } = useGraph();
 
   return (
     <>
@@ -67,6 +31,7 @@ function Playground(): JSX.Element {
           onNodesChange={onNodesChange}
           onEdgesChange={onEdgesChange}
           onConnect={onConnect}
+          nodeTypes={nodeTypesConfig}
         >
           <Controls />
           <MiniMap />
@@ -75,6 +40,6 @@ function Playground(): JSX.Element {
       </div>
     </>
   );
-}
+};
 
 export default Playground;

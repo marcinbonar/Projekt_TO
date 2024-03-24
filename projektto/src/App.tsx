@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import MainGrid from './Components/MainGrid';
+import MainGrid from './Components/MainGrid/MainGrid';
+import { mockDatabaseSchema } from './services/mock';
+import { tableScriptGenerator } from './services/functions/tableScriptGenerator';
 
+const App = () => {
 
-function App(): JSX.Element {
   return (
-      <MainGrid />
+    <MainGrid />
   );
-}
+};
 
 export default App;
