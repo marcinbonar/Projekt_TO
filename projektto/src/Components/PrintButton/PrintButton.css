@@ -1,0 +1,15 @@
+.ToolsDiv {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.ToolsButton {
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.ToolsButton:hover {
+    transform: scale(1.05);
+}

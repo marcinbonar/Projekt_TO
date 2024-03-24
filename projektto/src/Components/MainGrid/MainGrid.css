@@ -1,0 +1,48 @@
+.MainGridLeftSideContainer {
+    border-width: 0 1px 1px 1px;
+    border-color: #c4c4c4;
+    border-style: solid;
+    margin-left: 0;
+}
+
+.LogoCol {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #eeecec;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.ToolsCol {
+    background-color: #eeecec;
+    border-bottom: 1px solid #c4c4c4;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    height: 74px;
+}
+
+.PlaygroundCol {
+    padding: 0;
+}
+
+.ManageDBCol {
+    border-right: 1px solid #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+
+
+}
+
+.LogoCol {
+    background-color: #eeecec;
+    border-bottom: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+}
+
+.LogoImage {
+    width: 210px;
+    padding: 15px;
+}

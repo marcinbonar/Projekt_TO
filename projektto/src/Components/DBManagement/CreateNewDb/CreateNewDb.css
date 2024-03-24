@@ -1,0 +1,18 @@
+.CreateNewDbButton {
+    padding: 10px;
+    max-width: 200px;
+    margin: auto;
+    font-size: 15px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    transition: 0.3s all linear;
+    font-weight: bolder;
+}
+
+.CreateNewDbButton:hover {
+    font-size: 15px;
+    transform: scale(1.05);
+}
+
+
+
