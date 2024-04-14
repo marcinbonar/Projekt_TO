@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e24c3d20-bbb8-4a22-b7af-8df0a253e044" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DBManagement/ActualDb/ActualDb.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DBManagement/ActualDb/ActualDb.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DBManagement/ActualDb/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DBManagement/ActualDb/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DBManagement/CreateDbForm/CreateDBForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DBManagement/CreateDbForm/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DBManagement/CreateNewDb/CreateNewDb.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DBManagement/CreateNewDb/CreateNewDb.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DBManagement/CreateNewDb/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DiagramManagement/DiagramManage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainGrid/MainGrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainGrid/MainGrid.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainGridLeftSide/LOGO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainGridLeftSide/MainGridLeftSide.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainGridRightSide/MainGridRightSide.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Node/Node.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Node/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Playground/Playground.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Playground/Playground.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Playground/constants.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Playground/createNewNode.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Playground/useGraph.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/PrintButton/PrintButton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/PrintButton/PrintButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TablesList/TablesList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TablesList/TablesList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Tools.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/SqlSaveButton/SqlSaveButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/functions/saveSqlFile.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/functions/tableScriptGenerator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/mock.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2f43blpd8NyNanPhaJCh7Lo6gC8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "E:\\Projekt_TO_Nauka\\Projekt_TO\\projektto\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e24c3d20-bbb8-4a22-b7af-8df0a253e044" name="Changes" comment="" />
+      <created>1713046600659</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713046600659</updated>
+      <workItem from="1713046601954" duration="146000" />
+      <workItem from="1713046766729" duration="779000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

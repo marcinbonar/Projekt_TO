@@ -1,12 +1,14 @@
 import React from 'react';
-import MainGrid from './Components/MainGrid/MainGrid';
-import { mockDatabaseSchema } from './services/mock';
-import { tableScriptGenerator } from './services/functions/tableScriptGenerator';
+import { Provider } from 'react-redux'
+
+import { store } from './store/store';
+import Layout from './components/Layout';
 
 const App = () => {
-
   return (
-    <MainGrid />
+    <Provider store={store}>
+      <Layout />
+    </Provider>
   );
 };
 
