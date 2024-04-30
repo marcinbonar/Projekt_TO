@@ -40,7 +40,7 @@ export interface TElement {
   notNull: boolean,
   unique: boolean,
   primaryKey: boolean,
-  defaultValue: false,
+  defaultValue: boolean,
   foreignKey: string;
   foreignTable: string;
 }

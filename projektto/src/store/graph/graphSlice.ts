@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { DatabaseType, TDatabase } from '../../types/database';
+import { DatabaseType, TDatabase, TEdge } from '../../types/database';
 import { Node } from 'reactflow';
 import { TElement } from '../../types/node';
 
@@ -10,6 +10,7 @@ export const initialState: GraphState = {
   name: 'Graph',
   type: DatabaseType.RELATIONAL,
   tables: [],
+  edges: []
 };
 
 export const graphSlice = createSlice({
@@ -60,7 +61,9 @@ export const graphSlice = createSlice({
         return table;
       });
     },
-
+    onEdgeChange: (state, action: PayloadAction<TEdge[]>) => {
+      state.edges = action.payload;
+    }
   },
 
 });
@@ -72,7 +75,8 @@ export const {
   deleteTableElement,
   deleteTable,
   updateTableName,
-  setGraph
+  setGraph,
+  onEdgeChange
 } = graphSlice.actions;
 
 export default graphSlice.reducer;
