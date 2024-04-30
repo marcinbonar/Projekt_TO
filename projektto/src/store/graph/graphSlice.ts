@@ -10,7 +10,7 @@ export const initialState: GraphState = {
   name: 'Graph',
   type: DatabaseType.RELATIONAL,
   tables: [],
-  edges: []
+  edges: [],
 };
 
 export const graphSlice = createSlice({
@@ -18,11 +18,11 @@ export const graphSlice = createSlice({
   initialState,
   reducers: {
     setGraph: (state, action: PayloadAction<TDatabase>) => {
-      const {id, name, type, tables} = action.payload
+      const { id, name, type, tables } = action.payload;
       state.id = id;
       state.name = name;
       state.type = type;
-      state.tables = tables
+      state.tables = tables;
     },
     addNewGraphElement: (state, action: PayloadAction<Node>) => {
       state.tables = [...state.tables, action.payload];
@@ -63,7 +63,10 @@ export const graphSlice = createSlice({
     },
     onEdgeChange: (state, action: PayloadAction<TEdge[]>) => {
       state.edges = action.payload;
-    }
+    },
+    onChangeGraphType: (state, action: PayloadAction<{type: DatabaseType}>) => {
+      state.type = action.payload.type;
+    },
   },
 
 });
@@ -76,7 +79,8 @@ export const {
   deleteTable,
   updateTableName,
   setGraph,
-  onEdgeChange
+  onEdgeChange,
+  onChangeGraphType
 } = graphSlice.actions;
 
 export default graphSlice.reducer;

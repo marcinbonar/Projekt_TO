@@ -1,7 +1,8 @@
 import { Node } from 'reactflow';
 
 export enum DatabaseType {
-  RELATIONAL = 'RELATIONAL'
+  RELATIONAL = 'RELATIONAL',
+  OBJECT = 'OBJECT'
 }
 
 export type TEdge = any

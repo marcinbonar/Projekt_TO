@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e24c3d20-bbb8-4a22-b7af-8df0a253e044" name="Changes" comment="Postępy pracy">
+    <list default="true" id="e24c3d20-bbb8-4a22-b7af-8df0a253e044" name="Changes" comment="work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CustomNode/CustomNode.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CustomNode/CustomNode.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useGraph.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useGraph.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Playground/Playground.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Playground/Playground.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/graph/graphSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/graph/graphSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/database.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/node.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/node.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/tableScriptGenerator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/tableScriptGenerator.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,7 @@
       <workItem from="1714028585503" duration="5406000" />
       <workItem from="1714063787389" duration="4064000" />
       <workItem from="1714159753509" duration="1230000" />
-      <workItem from="1714490542551" duration="6274000" />
+      <workItem from="1714490542551" duration="10189000" />
     </task>
     <task id="LOCAL-00001" summary="Postępy pracy">
       <created>1713117938602</created>
@@ -75,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713117938602</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="work">
+      <created>1714497177643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714497177643</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Postępy pracy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Postępy pracy" />
+    <MESSAGE value="work" />
+    <option name="LAST_COMMIT_MESSAGE" value="work" />
   </component>
 </project>
