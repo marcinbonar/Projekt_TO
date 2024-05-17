@@ -13,6 +13,7 @@ import { tableScriptGenerator } from '../../utils/tableScriptGenerator';
 import { exportFile } from '../../utils/exportFile';
 import { DatabaseType } from '../../types/database';
 import { onChangeGraphType } from '../../store/graph/graphSlice';
+import CustomEdge from '../CustomEdge/CustomEdge';
 
 const Playground = () => {
   const { tables, onNodesChange, onConnect, edges, handleCreateNewNode, onEdgesChange } = useGraph();
@@ -35,6 +36,11 @@ const Playground = () => {
     label: 'Obiektowa', value: 'OBJECT',
   }];
 
+  const edgeTypes = {
+    custom: CustomEdge,
+  };
+
+
   return <div style={{ width: '100vw', height: '70vh', padding: '4px' }}>
     <Flex gap={16}>
       <Button type='primary' icon={<PlusOutlined />} onClick={handleCreateNewNode} style={{ marginBottom: 16 }}>Dodaj
@@ -55,6 +61,7 @@ const Playground = () => {
     <ReactFlow
       nodes={tables}
       edges={edges}
+      edgeTypes={edgeTypes}
       onNodesChange={onNodesChange}
       onEdgesChange={onEdgesChange}
       onConnect={onConnect}

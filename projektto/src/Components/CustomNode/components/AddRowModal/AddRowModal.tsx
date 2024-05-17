@@ -82,11 +82,6 @@ const AddRowModal: FC<{ isModalVisible: boolean, closeModal: () => void, id: str
           Wartośc PRIMARY KEY
         </Checkbox>
       </Form.Item>
-      <Form.Item valuePropName='checked' name='defaultValue' initialValue={false}>
-        <Checkbox>
-          Wartośc DEFAULT
-        </Checkbox>
-      </Form.Item>
       <Form.Item label='Klucz obcy' name='foreignKey'>
         <Input placeholder='Podaj nazwę pola' />
       </Form.Item>

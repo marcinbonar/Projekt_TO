@@ -43,6 +43,7 @@ export interface TElement {
   defaultValue: boolean,
   foreignKey: string;
   foreignTable: string;
+  color: string;
 }
 
 export interface NodeData {

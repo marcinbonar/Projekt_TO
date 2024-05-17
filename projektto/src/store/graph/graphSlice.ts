@@ -3,7 +3,7 @@ import { DatabaseType, TDatabase, TEdge } from '../../types/database';
 import { Node } from 'reactflow';
 import { TElement } from '../../types/node';
 
-type GraphState = TDatabase
+type GraphState = TDatabase;
 
 export const initialState: GraphState = {
   id: '',
@@ -18,11 +18,12 @@ export const graphSlice = createSlice({
   initialState,
   reducers: {
     setGraph: (state, action: PayloadAction<TDatabase>) => {
-      const { id, name, type, tables } = action.payload;
+      const { id, name, type, tables, edges } = action.payload;
       state.id = id;
       state.name = name;
       state.type = type;
       state.tables = tables;
+      state.edges = edges
     },
     addNewGraphElement: (state, action: PayloadAction<Node>) => {
       state.tables = [...state.tables, action.payload];
@@ -48,6 +49,20 @@ export const graphSlice = createSlice({
         return el;
       });
     },
+    updateTableElement: (state, action: PayloadAction<{ id?: string, elementId: string, updateData: TElement }>) => {
+      const { id, elementId, updateData } = action.payload;
+      state.tables = state.tables.map(table => {
+        if (table.id === id) {
+          table.data.elements = table.data.elements.map((element: TElement) => {
+            if (element.id === elementId) {
+              return { ...element, ...updateData };
+            }
+            return element;
+          });
+        }
+        return table;
+      });
+    },
     deleteTable: (state, action: PayloadAction<{ tableId: string }>) => {
       const { tableId } = action.payload;
       state.tables = state.tables.filter(el => el.id !== tableId);
@@ -64,11 +79,24 @@ export const graphSlice = createSlice({
     onEdgeChange: (state, action: PayloadAction<TEdge[]>) => {
       state.edges = action.payload;
     },
-    onChangeGraphType: (state, action: PayloadAction<{type: DatabaseType}>) => {
+    onChangeGraphType: (state, action: PayloadAction<{ type: DatabaseType }>) => {
       state.type = action.payload.type;
     },
+    updateForeignKey: (state, action: PayloadAction<{ id: string, elementId: string, newForeignKey: string }>) => {
+      const { id, elementId, newForeignKey } = action.payload;
+      state.tables = state.tables.map(table => {
+        if (table.id === id) {
+          table.data.elements = table.data.elements.map((element: TElement) => {
+            if (element.id === elementId) {
+              return { ...element, foreignKey: newForeignKey };
+            }
+            return element;
+          });
+        }
+        return table;
+      });
+    },
   },
-
 });
 
 export const {
@@ -80,7 +108,9 @@ export const {
   updateTableName,
   setGraph,
   onEdgeChange,
-  onChangeGraphType
+  onChangeGraphType,
+  updateTableElement,
+  updateForeignKey
 } = graphSlice.actions;
 
 export default graphSlice.reducer;

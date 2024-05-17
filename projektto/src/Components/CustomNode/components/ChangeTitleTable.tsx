@@ -20,8 +20,8 @@ const ChangeTitleTable: FC<{ isModalVisible: boolean, closeModal: () => void, id
     } catch (e) {
       console.error('Error updating table name:', e);
     } finally {
-      form.resetFields(); // Zresetuj pola formularza
-      closeModal(); // Zamknij modal
+      form.resetFields();
+      closeModal();
     }
   };
 
