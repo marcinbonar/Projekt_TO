@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e24c3d20-bbb8-4a22-b7af-8df0a253e044" name="Changes" comment="work-object-relational">
-      <change afterPath="$PROJECT_DIR$/src/Components/CustomEdge/CustomEdge.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/CustomNode/components/ChangeForeignKeyName/ChangeForeignKeyName.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/getRandomColor.ts" afterDir="false" />
+    <list default="true" id="e24c3d20-bbb8-4a22-b7af-8df0a253e044" name="Changes" comment="mecze-druzyna">
+      <change afterPath="$PROJECT_DIR$/src/sql-validator.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/sortTablesByDependencies.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/sortTablesByInheritance.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CustomNode/CustomNode.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CustomNode/CustomNode.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CustomNode/components/AddRowModal/AddRowModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CustomNode/components/AddRowModal/AddRowModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CustomNode/components/ChangeTitleTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CustomNode/components/ChangeTitleTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CustomNode/components/ChangeForeignKeyName/ChangeForeignKeyName.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CustomNode/components/ChangeForeignKeyName/ChangeForeignKeyName.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Playground/Playground.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Playground/Playground.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useGraph.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useGraph.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/graph/graphSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/graph/graphSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/graph/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/graph/selectors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/node.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/node.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomNode/components/AddRowModal/AddRowModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomNode/components/AddRowModal/AddRowModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/tableScriptGenerator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/tableScriptGenerator.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +85,22 @@
       <workItem from="1715584819719" duration="262000" />
       <workItem from="1715629010673" duration="45000" />
       <workItem from="1715761410902" duration="57000" />
-      <workItem from="1715958929226" duration="5684000" />
+      <workItem from="1715958929226" duration="5820000" />
+      <workItem from="1716184978953" duration="584000" />
+      <workItem from="1716192427826" duration="2693000" />
+      <workItem from="1716200206223" duration="1078000" />
+      <workItem from="1716229642842" duration="14000" />
+      <workItem from="1716650653677" duration="1924000" />
+      <workItem from="1716745930667" duration="714000" />
+      <workItem from="1716795383966" duration="126000" />
+      <workItem from="1716886288484" duration="11000" />
+      <workItem from="1717421040938" duration="903000" />
+      <workItem from="1717424278821" duration="17000" />
+      <workItem from="1717960167188" duration="3446000" />
+      <workItem from="1718007036666" duration="3581000" />
+      <workItem from="1718012938543" duration="436000" />
+      <workItem from="1718264346931" duration="41000" />
+      <workItem from="1718544779190" duration="1560000" />
     </task>
     <task id="LOCAL-00001" summary="Postępy pracy">
       <created>1713117938602</created>
@@ -110,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714505151240</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mecze-druzyna">
+      <created>1715964794416</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715964794416</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +140,7 @@
     <MESSAGE value="Postępy pracy" />
     <MESSAGE value="work" />
     <MESSAGE value="work-object-relational" />
-    <option name="LAST_COMMIT_MESSAGE" value="work-object-relational" />
+    <MESSAGE value="mecze-druzyna" />
+    <option name="LAST_COMMIT_MESSAGE" value="mecze-druzyna" />
   </component>
 </project>

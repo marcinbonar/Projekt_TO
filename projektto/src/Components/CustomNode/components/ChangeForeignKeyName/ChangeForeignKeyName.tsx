@@ -14,7 +14,7 @@ const ChangeForeignKeyName = ({ isVisible, closeModal, elementId, initialValue, 
 
   return (
     <Modal
-      title="Change Foreign Key Name"
+      title="Zmień nazwe klucza obcego"
       visible={isVisible}
       onOk={handleOk}
       onCancel={closeModal}
