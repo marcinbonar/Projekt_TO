@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e24c3d20-bbb8-4a22-b7af-8df0a253e044" name="Changes" comment="mecze-druzyna">
-      <change afterPath="$PROJECT_DIR$/src/sql-validator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/sortTablesByDependencies.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/sortTablesByInheritance.tsx" afterDir="false" />
+    <list default="true" id="e24c3d20-bbb8-4a22-b7af-8df0a253e044" name="Changes" comment="postępy pracy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CustomNode/components/ChangeForeignKeyName/ChangeForeignKeyName.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CustomNode/components/ChangeForeignKeyName/ChangeForeignKeyName.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Playground/Playground.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Playground/Playground.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CustomNode/components/AddRowModal/AddRowModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomNode/components/AddRowModal/AddRowModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CustomNode/components/AddRowModal/AddRowModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CustomNode/components/AddRowModal/AddRowModal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/tableScriptGenerator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/tableScriptGenerator.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +93,9 @@
       <workItem from="1718007036666" duration="3581000" />
       <workItem from="1718012938543" duration="436000" />
       <workItem from="1718264346931" duration="41000" />
-      <workItem from="1718544779190" duration="1560000" />
+      <workItem from="1718544779190" duration="1996000" />
+      <workItem from="1718562629196" duration="2586000" />
+      <workItem from="1718568904724" duration="239000" />
     </task>
     <task id="LOCAL-00001" summary="Postępy pracy">
       <created>1713117938602</created>
@@ -130,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715964794416</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="postępy pracy">
+      <created>1718546474873</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718546474873</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +143,7 @@
     <MESSAGE value="work" />
     <MESSAGE value="work-object-relational" />
     <MESSAGE value="mecze-druzyna" />
-    <option name="LAST_COMMIT_MESSAGE" value="mecze-druzyna" />
+    <MESSAGE value="postępy pracy" />
+    <option name="LAST_COMMIT_MESSAGE" value="postępy pracy" />
   </component>
 </project>

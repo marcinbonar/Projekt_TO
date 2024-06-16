@@ -10,19 +10,18 @@ export const displayConfigElement = (value: boolean, displayValue: 'NOT NULL' | 
 };
 
 export const generateRelationalPropertyElement = (column: TElement) => {
-  const { name, notNull, type, unique, length, defaultValue, primaryKey, foreignKey, foreignTable } = column;
+  const { name, notNull, type, unique, length, defaultValue, primaryKey } = column;
   const notNullValue = displayConfigElement(notNull, 'NOT NULL');
   const uniqueValue = unique && !primaryKey ? displayConfigElement(unique, 'UNIQUE') : '';
   const defaultDisplayValue = displayConfigElement(defaultValue, 'DEFAULT');
-  const typeValue = `${type}(${length})`;
+  const typeValue = type ? `${type}(${length})` : type;
 
-  const primaryKeyValue = primaryKey && !foreignKey ? displayConfigElement(primaryKey, 'PRIMARY KEY') : '';
+  const primaryKeyValue = primaryKey ? displayConfigElement(primaryKey, 'PRIMARY KEY') : '';
 
-  const propertyValue = [name, typeValue, notNullValue, uniqueValue, defaultDisplayValue, primaryKeyValue].filter(el => el).join(' ');
 
-  const foreignLine = foreignKey ? `FOREIGN KEY (${name}) REFERENCES ${foreignTable}(${foreignKey})` : '';
-  return foreignKey ? [propertyValue, foreignLine].join(',\n') : propertyValue;
+  return [name, typeValue, notNullValue, uniqueValue, defaultDisplayValue, primaryKeyValue].filter(el => el).join(' ');
 };
+
 
 
 export const generateObjectPropertyElement = (column: TElement) => {
@@ -43,7 +42,8 @@ export const generateRelationalCode = (tables: Node[]): string => {
     const columnDefinitions = table.elements.map((el: TElement) => generateRelationalPropertyElement(el)).join(',\n');
     createTableSql += `${columnDefinitions}\n);`;
 
-    const foreignKeyStatements = table.elements.filter((el:any) => el.foreignKey).map((el:any) =>
+    // Dodanie klauzuli ALTER TABLE dla kluczy obcych
+    const foreignKeyStatements = table.elements.filter((el: any) => el.foreignKey).map((el: any) =>
       `ALTER TABLE ${table.label} ADD FOREIGN KEY (${el.name}) REFERENCES ${el.foreignTable}(${el.foreignKey});`
     ).join('\n');
 
@@ -52,6 +52,7 @@ export const generateRelationalCode = (tables: Node[]): string => {
 
   return sqlData.join('\n\n');
 };
+
 
 
 

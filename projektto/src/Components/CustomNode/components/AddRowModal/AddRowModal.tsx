@@ -82,12 +82,6 @@ const AddRowModal: FC<{ isModalVisible: boolean, closeModal: () => void, id: str
           Wartośc PRIMARY KEY
         </Checkbox>
       </Form.Item>
-      <Form.Item label='Klucz obcy' name='foreignKey'>
-        <Input placeholder='Podaj nazwę pola' />
-      </Form.Item>
-      <Form.Item label='Tabela klucza obcego' name='foreignTable'>
-        <Input placeholder='Podaj nazwę pola' />
-      </Form.Item>
     </Form>
   </Modal>;
 };
